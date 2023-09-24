@@ -1,4 +1,4 @@
-# VPC_in_Production_Environment_AWS
+# VPC in Production Environment
 
 This possible demonstration outlines the steps involved in creating a Virtual Private Cloud (VPC), which may then be used to house servers in a setting that is focused on production.
 
@@ -9,7 +9,7 @@ A deployment method is used, in which servers are spread across two different Av
 
 Architecture : 
 
-![App Screenshot](https://github.com/asthasharma1712/VPC_with_Public_Private_subnet/assets/85539636/de67b4fe-8cdf-4945-945f-c5472b7e2c47)
+![App Screenshot](https://github.com/asthasharma1712/VPC_in_Production_Environment/assets/85539636/03e5432e-71cc-4453-9fc0-82c21ed945e1)
 
 
 Step 1 : Create the VPC
@@ -23,15 +23,17 @@ Use the following procedure to create a VPC with a public subnet and a private s
 
     1.2 - Configure the AZs, public and private subnets, NAT gateway and VPC endpoints as mentioned below
               
-![App Screenshot](https://github.com/asthasharma1712/VPC_with_Public_Private_subnet/assets/85539636/8cb234b8-05f1-46df-b4a8-952dd92ddba8)
+![App Screenshot](https://github.com/asthasharma1712/VPC_in_Production_Environment/assets/85539636/a1c7cb42-f9f6-422c-bf22-a17efc565ec4)
+
 
 Preview : 
-![App Screenshot](https://github.com/asthasharma1712/VPC_with_Public_Private_subnet/assets/85539636/c835692a-f13d-4d5f-9e2a-86cce03b509c)
+![App Screenshot](https://github.com/asthasharma1712/VPC_in_Production_Environment/assets/85539636/78ef1d15-7e84-485c-a046-ebef0d1b7bdf)
 
 
 Step 2 : To launch instances by using an Auto Scaling group
 
-![App Screenshot](https://github.com/asthasharma1712/VPC_with_Public_Private_subnet/assets/85539636/16ce4a3c-6e34-45ab-b857-2be5b0fe70f9)
+![App Screenshot](https://github.com/asthasharma1712/VPC_in_Production_Environment/assets/85539636/8c27eca8-fd1c-406e-8605-7163ae1d5f49)
+
     
     2.1 - Create a launch template to specify the configuration information needed to launch your EC2 instances by using Amazon EC2 Auto Scaling.
           Note : Use same key pair (login) for the entire  project.         
@@ -66,7 +68,7 @@ Step 4 : Run the following commands in terminal
 
 Step 5 : Create an Application Load Balancer
 
-![App Screenshot](https://github.com/asthasharma1712/VPC_with_Public_Private_subnet/assets/85539636/e6d5b50b-4555-4b87-b946-405f02af18cf)
+![App Screenshot](https://github.com/asthasharma1712/VPC_in_Production_Environment/assets/85539636/aedd8792-a9df-4858-89fe-dbe833f45b32)
 
 Refer [Create application Load Balancers through the AWS Management Console](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancer-getting-started.html)
     
